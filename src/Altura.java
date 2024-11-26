@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Altura {
 
+
     public static int numeroalumnos(){
         Scanner sc=new Scanner(System.in);
         System.out.println("Cuantos alumnos hay?");
