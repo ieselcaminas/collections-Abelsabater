@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class RepartiendoRegalos {
 
-    public static String cerca(ArrayList<Integer> calles){
+    public static String cerca(ArrayList<Integer>calles){
         int cont;
         int cerca=1000000000;
         int calless=calles.size();
@@ -11,11 +11,11 @@ public class RepartiendoRegalos {
         int pos=0;
         int callact=calles.get(0);
         do{
-            for (Integer cal: calles) {
-                cont=callact-calles.get(cal);
+            for (int i = 0; i < calless; i++) {
+                cont=callact-calles.get(i);
                 if(Math.abs(cont)<=cerca){
                     cerca=cont;
-                    pos=cal;
+                    pos=i;
                 }
             }
             callact=calles.get(pos);
