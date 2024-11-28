@@ -10,6 +10,7 @@ public class TelefonoII {
             System.out.println("No tenim a eixa persona guardada o has posat mal el seu nom");
         }
     }
+
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         HashMap<String, ArrayList<Integer>> Guiatelefonos=new HashMap<>();
