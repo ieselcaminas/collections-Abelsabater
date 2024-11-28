@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 public class TelefonoII {
     public static void telefono(HashMap<String, ArrayList<Integer>> Guiatelefono, String pers){
-        int telefono=0;
         if(Guiatelefono.containsKey(pers)){
             System.out.println(Guiatelefono.get(pers));
         }else{
