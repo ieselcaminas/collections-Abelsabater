@@ -11,9 +11,9 @@ public class RepartiendoRegalos {
         int pos=0;
         int callact=calles.get(0);
         do{
-            for (int i = 0; i < calless; i++) {
-                cont=callact-calles.get(i);
-                if(Math.abs(cont)<=cerca){
+            for (int i = 1; i < calless; i++) {
+                cont=Math.abs(callact-calles.get(i));
+                if(cont<=cerca){
                     cerca=cont;
                     pos=i;
                 }
@@ -22,7 +22,7 @@ public class RepartiendoRegalos {
             orden+=" "+calles.get(pos);
             calless--;
             calles.remove(calles.get(pos));
-        }while(calless>0);
+        }while(calless>=1);
         return orden;
     }
     public static void main(String[] args) {
