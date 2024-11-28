@@ -32,6 +32,5 @@ public class TelefonoII {
         System.out.println("Dime una persona");
         String pers= sc.nextLine().toUpperCase();
         telefono(Guiatelefonos,pers);
-
     }
 }
