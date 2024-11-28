@@ -8,7 +8,7 @@ public class TelefonoII {
         if(Guiatelefono.containsKey(pers)){
             System.out.println(Guiatelefono.get(pers));
         }else{
-            System.out.println("No tenim a eixa persona guardada");
+            System.out.println("No tenim a eixa persona guardada o has posat mal el seu nom");
         }
     }
     public static void main(String[] args) {
