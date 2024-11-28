@@ -11,6 +11,7 @@ public class Altura {
         System.out.println("Dime la altura");
         return sc.nextDouble();
     }
+
     public static double Media(ArrayList<Double>Altura, int div){
         double suma=0;
         for (Double alt : Altura) {
