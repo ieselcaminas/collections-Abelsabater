@@ -49,6 +49,7 @@ public class Altura {
         for (int i = 0; i < alm; i++) {
             Altura.add(leerAlturas());
         }
+
         double media=Media(Altura,alm);
         System.out.println(media);
         mostrarresultados(Altura,media);
