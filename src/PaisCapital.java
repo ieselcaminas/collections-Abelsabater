@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -6,10 +5,8 @@ import java.util.Scanner;
 public class PaisCapital {
 
     public static String paiscapital(Map<String, String>Paises, String pais){
-            return Paises.get(pais);
+            return Paises.getOrDefault(pais,"No sabem la capital del pais o no existeix");
     }
-
-
     public static void main(String[] args) {
         Map<String,String>Paises=new HashMap<String,String>();
         Scanner sc=new Scanner(System.in);
