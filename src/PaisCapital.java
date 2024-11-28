@@ -17,6 +17,7 @@ public class PaisCapital {
         Paises.put("ALEMANIA","Berlin");
         System.out.println("Dime un pais");
         String pais=sc.nextLine().toUpperCase();
+        System.out.println("La capital de eixe pais es: ");
         System.out.println(paiscapital(Paises,pais));
     }
 }
