@@ -14,7 +14,7 @@ public class Ejemplo1 {
         for (int i = 0; i < numeros.size(); i++) {
             suma+=numeros.get(i);
         }
-        Collections.sort(numeros);
+         Collections.sort(numeros);
         System.out.println(suma/(numeros.size()));
         System.out.println(numeros);
     }

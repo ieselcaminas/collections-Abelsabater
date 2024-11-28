@@ -51,7 +51,7 @@ public class Altura {
         }
 
         double media=Media(Altura,alm);
-        System.out.println(media);
+         System.out.println(media);
         mostrarresultados(Altura,media);
 
     }
