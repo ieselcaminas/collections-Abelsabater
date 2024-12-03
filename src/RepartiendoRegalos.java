@@ -22,7 +22,7 @@ public class RepartiendoRegalos {
             orden+=" "+calles.get(pos);
             calless--;
             calles.remove(calles.get(pos));
-        }while(calless>=1);
+        }while(calless>1);
         return orden;
     }
     public static void main(String[] args) {
