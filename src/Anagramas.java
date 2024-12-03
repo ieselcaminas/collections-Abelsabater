@@ -28,6 +28,9 @@ public class Anagramas {
         reader.close();
         System.out.println(palabrass);
     }
+
+
+
     private static String alphabetize(String s) {
         char[] a = s.toCharArray();
         Arrays.sort(a);
