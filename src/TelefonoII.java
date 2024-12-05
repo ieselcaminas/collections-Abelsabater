@@ -19,12 +19,12 @@ public class TelefonoII {
         telefonos.add("629350754");
         telefonos.add("624918634");
         Guiatelefonos.put("ABEL",telefonos);
-        telefonos=new ArrayList<String>();
+        telefonos=new ArrayList<>();
         telefonos.add("607306135");
         telefonos.add("635815376");
         telefonos.add("636532275");
         Guiatelefonos.put("PAU",telefonos);
-        telefonos=new ArrayList<String>();
+        telefonos=new ArrayList<>();
         telefonos.add("743508243");
         telefonos.add("651097606");
         telefonos.add("650858984");
