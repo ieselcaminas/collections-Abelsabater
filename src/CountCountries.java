@@ -7,6 +7,7 @@ public class CountCountries {
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("file/Colfuturo-Seleccionados.csv"));
         String pais;
+        reader.readLine();
         Map<String,Integer> paises=new HashMap<>();
         while ((pais = reader.readLine())!=null) {
             String [] dades=pais.split(",");
