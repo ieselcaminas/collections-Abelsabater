@@ -6,12 +6,9 @@ import java.util.Map;
 import java.util.Scanner;
 
 public class LastNameFrequency {
-
-    public static void main(String[] args) throws IOException {
-        Scanner sc=new Scanner(System.in);
+    public static Map<String,String>lastnamefrequency() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("file/LastnameFrequencies.csv"));
         String apellido;
-        String apellido2;
         Map<String,String> apellidos=new HashMap<>();
         while ((apellido = reader.readLine())!=null) {
             String [] ap= apellido.split(",");
@@ -19,6 +16,13 @@ public class LastNameFrequency {
                 apellidos.put(ap[0], ap[1]);
             }
         }
+        return apellidos;
+    }
+
+    public static void main(String[] args) throws IOException {
+        Scanner sc=new Scanner(System.in);
+        String apellido2;
+        Map<String,String>apellidos=lastnamefrequency();
         System.out.println("Dime un apellido");
         apellido2= sc.nextLine().toUpperCase();
         System.out.println(apellidos.get(apellido2));
