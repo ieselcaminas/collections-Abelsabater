@@ -1,29 +1,27 @@
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class LaMejorTerminacion {
-
-    public static int lamejorterminacion(ArrayList<String> boletos, int num){
-        Integer cont = 0;
-        char ultimo;
+    public static Map<Character,Integer> lamejorterminacion(String[]boletos){
+        Map<Character,Integer> terminacion=new HashMap<>();
+        Integer cont;
+        Character ultimo;
         for (String bol:boletos) {
             ultimo=bol.charAt(bol.length()-1);
-            if(ultimo-'0'==num){
-                cont++;
+            cont=terminacion.get(ultimo);
+            if(cont == null){
+                terminacion.put(ultimo,1);
+            }else{
+                terminacion.put(ultimo,cont+1);
             }
         }
-        if(cont == 0){
-           cont++;
-        }
-        return cont;
+        return terminacion;
     }
 
     public static void main(String[] args) {
-        ArrayList<String> boletos=new ArrayList<>();
-        boletos.add("00004");
-        boletos.add("03847");
-        boletos.add("39804");
-        int num=3;
-        System.out.println( num+"="+lamejorterminacion(boletos,num));
+        String [] boletos={"00004","03847","39804"};
+        System.out.println(lamejorterminacion(boletos));
     }
 
 }
