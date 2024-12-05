@@ -13,10 +13,7 @@ public class CountCountries {
         while ((pais = reader.readLine())!=null) {
             String [] dades=pais.split(",");
             Integer freq = paises.get(dades[6]);
-            if (freq==null)
-                paises.put(dades[6], 1);
-            else
-                paises.put(dades[6], freq+1);
+            paises.merge(dades[6], 1, Integer::sum);
             paises.put(dades[6], freq==null ? 1: freq+1);
         }
         System.out.println(paises);
