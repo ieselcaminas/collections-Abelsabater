@@ -2,7 +2,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 public class Coche {
-    public static void main(String[] args) {
+
+    public static ArrayList<String>cochess(){
         ArrayList<String> Coche=new ArrayList<>();
         Scanner sc=new Scanner(System.in);
         String marca;
@@ -13,7 +14,11 @@ public class Coche {
                 Coche.add(marca);
             }
         }while(!marca.isEmpty());
-         Collections.sort(Coche);
+        Collections.sort(Coche);
+        return Coche;
+    }
+    public static void main(String[] args) {
+        ArrayList<String>Coche=cochess();
         for (int i = 0; i < Coche.size(); i++) {
             System.out.println(Coche.get(i));
         }
