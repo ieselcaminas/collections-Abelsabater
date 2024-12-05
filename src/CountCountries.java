@@ -4,7 +4,8 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 public class CountCountries {
-    public static void main(String[] args) throws IOException {
+
+    public static Map<String,Integer>countcountries() throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("file/Colfuturo-Seleccionados.csv"));
         String pais;
         reader.readLine();
@@ -17,6 +18,11 @@ public class CountCountries {
             else
                 paises.put(dades[6], freq+1);
         }
+        return paises;
+    }
+
+    public static void main(String[] args) throws IOException {
+        Map<String,Integer>paises=countcountries();
         System.out.println(paises);
     }
 }
