@@ -21,10 +21,6 @@ public class LastNameFrequency {
         }
         System.out.println("Dime un apellido");
         apellido2= sc.nextLine().toUpperCase();
-        if(apellido2!=null){
-            System.out.println(apellidos.get(apellido2));
-        }else{
-            System.out.println("No hi ha ningú amb eixe apellido");
-        }
+        System.out.println(apellidos.get(apellido2));
     }
 }
