@@ -11,13 +11,20 @@ public class LastNameFrequency {
         Scanner sc=new Scanner(System.in);
         BufferedReader reader = new BufferedReader(new FileReader("file/LastnameFrequencies.csv"));
         String apellido;
+        String apellido2;
         Map<String,String> apellidos=new HashMap<>();
         while ((apellido = reader.readLine())!=null) {
             String [] ap= apellido.split(",");
-            apellidos.put(ap[0],ap[1]);
+            if (ap.length == 2) {
+                apellidos.put(ap[0], ap[1]);
+            }
         }
         System.out.println("Dime un apellido");
-        apellido= sc.nextLine().toUpperCase();
-        System.out.println(apellidos.get(apellido));
+        apellido2= sc.nextLine().toUpperCase();
+        if(apellido2!=null){
+            System.out.println(apellidos.get(apellido2));
+        }else{
+            System.out.println("No hi ha ningú amb eixe apellido");
+        }
     }
 }
