@@ -1,10 +1,14 @@
 package Varios;
+
+import java.util.Arrays;
+
 public class Mediana {
 public static void main(String[] args) {
-int[] num={1,2,6,17,18,22,35,46,109,143};
+int[] num={4,6,2,5,3,1,7};
     System.out.println(mediana(num));
 }
 public static double mediana(int numeros[]){
+    Arrays.sort(numeros);
     int s1;
     int s2;
     double st;
