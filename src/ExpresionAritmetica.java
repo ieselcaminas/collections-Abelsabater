@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Stack;
 
 public class ExpresionAritmetica {
@@ -12,10 +10,9 @@ public static int expresionaritmetica(String hh){
     int n1=0;
     int n2=0;
     int resultat;
-    ArrayList<String> operadors=new ArrayList<>();
     Stack<Integer> pila= new Stack<>();
     for (int i = 0; i < ex.length; i++) {
-       if(digito(ex[i])==true){
+       if(digito(ex[i])){
            pila.push(Integer.valueOf(ex[i]));
             n1=Integer.parseInt(ex[i]);
        }else{
@@ -52,5 +49,5 @@ public static int expresionaritmetica(String hh){
 public static void main(String[] args){
     String llista="2 4 5 3 / * +";
     System.out.println(expresionaritmetica(llista));
-    }
+}
 }
