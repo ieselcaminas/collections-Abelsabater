@@ -1,7 +1,5 @@
 package Varios;
-
 import java.util.Arrays;
-
 public class Mediana {
 public static void main(String[] args) {
 int[] num={4,6,2,5,3,1,7};
@@ -14,7 +12,6 @@ public static double mediana(int numeros[]){
     double st;
     if(numeros.length%2!=0){
         st=numeros[numeros.length/2];
-
     }else{
         s1=numeros.length/2;
         s2=numeros.length/2 -1;
