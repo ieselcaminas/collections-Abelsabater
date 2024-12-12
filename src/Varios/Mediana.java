@@ -6,9 +6,9 @@ int[] num={1,2,6,17,18,22,35,46,109,143};
     System.out.println(mediana(num));
 }
 public static double mediana(int numeros[]){
-    int s1=0;
-    int s2=0;
-    double st=0;
+    int s1;
+    int s2;
+    double st;
     if(numeros.length%2!=0){
         st=numeros[numeros.length/2];
 
