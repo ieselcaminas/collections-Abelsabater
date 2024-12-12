@@ -1,5 +1,4 @@
 package Varios;
-
 public class Mediana {
 public static void main(String[] args) {
 int[] num={1,2,6,17,18,22,35,46,109,143};
