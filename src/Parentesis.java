@@ -4,7 +4,6 @@ public class Parentesis {
 
 public static boolean parentesis(String frase) {
     Stack<Character> pila = new Stack<>();
-    String[] fras = frase.split(" ");
     char h;
     char ult;
     for (int i = 0; i < frase.length(); i++) {
@@ -12,23 +11,32 @@ public static boolean parentesis(String frase) {
         if (h == '[' || h == '(' || h == '{') {
             pila.push(h);
         }else if (h == ')') {
+            if(pila.isEmpty()){
+                return false;
+            }
             if (pila.pop() != '(') {
                 return false;
             }
         }else if (h == ']') {
+            if(pila.isEmpty()){
+                return false;
+            }
             if (pila.pop() != '[') {
                 return false;
             }
         }else if (h == '}') {
+            if(pila.isEmpty()){
+                return false;
+            }
             if (pila.pop() != '{') {
                 return false;
             }
         }
     }
-    return true;
+    return pila.isEmpty();
 }
 public static void main(String[] args) {
-    String frase= "([{{}}])";
+    String frase= "(){}";
     System.out.println(parentesis(frase));
     }
 }
