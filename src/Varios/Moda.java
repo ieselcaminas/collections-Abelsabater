@@ -2,7 +2,7 @@ package Varios;
 import java.util.HashMap;
 import java.util.Map;
 public class Moda {
-public static void main(String[] args) {
+public static void main(String[] args){
     int [] num={1,1,1,1,3,4,5,5,7,7,7,8,8};
     System.out.println(moda(num));
 }
