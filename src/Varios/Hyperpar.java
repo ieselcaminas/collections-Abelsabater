@@ -1,5 +1,4 @@
 package Varios;
-
 public class Hyperpar {
 public static void main(String[] args) {
     System.out.println(esHyperpar(2048));
