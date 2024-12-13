@@ -2,7 +2,7 @@ package Varios;
 import java.util.Arrays;
 public class Mediana {
 public static void main(String[] args) {
-int[] num={4,6,2,5,3,1,7,0};
+    int[] num={4,6,2,5,3,1,7};
     System.out.println(mediana(num));
 }
 public static double mediana(int numeros[]){
