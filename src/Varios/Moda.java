@@ -12,12 +12,7 @@ public static int moda(int[] numeros){
     int max=Integer.MIN_VALUE;
     Integer veces;
     for (int i = 0; i < numeros.length; i++) {
-        veces=modaa.get(numeros[i]);
-        if(veces==null){
-            modaa.put(numeros[i],1);
-        }else{
-            modaa.put(numeros[i],veces+1);
-        }
+        modaa.put(numeros[i],modaa.getOrDefault(numeros[i],0)+1 );
     }
     for (Map.Entry<Integer, Integer> en: modaa.entrySet()){
         if(en.getValue()>max){
