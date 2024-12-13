@@ -10,7 +10,6 @@ public static int moda(int[] numeros){
     Map<Integer,Integer> modaa=new HashMap<>();
     int m = 0;
     int max=Integer.MIN_VALUE;
-    Integer veces;
     for (int i = 0; i < numeros.length; i++) {
         modaa.put(numeros[i],modaa.getOrDefault(numeros[i],0)+1 );
     }
