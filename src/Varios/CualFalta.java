@@ -8,20 +8,17 @@ public static int cualfalta(int [] numeros){
     Arrays.sort(numeros);
     int falte=Integer.MIN_VALUE;
     for (int i = 0; i < numeros.length-1; i++) {
-        if(numeros[i+1]-numeros[i]>1){
-            falte=numeros[i]+1;
+        int resta=numeros[i+1]-numeros[i];
+        if(resta>1){
+            return numeros[i]+1;
+
         }
     }
-    return falte;
+    return -1;
 }
 
 public static void main(String[] args) {
-    int [] numeros={3,2,5,4,1,7};
-    int [] num2={3,2,5,4,1,6};
-    if(cualfalta(num2)>Integer.MIN_VALUE){
-        System.out.println("Falte el numero "+cualfalta(numeros));
-    }else{
-        System.out.println("No falte ningun");
+    System.out.println(cualfalta(new int[]{3,2,1,5,6}));
+    System.out.println(cualfalta(new int[]{3,2,1,5,4}));
     }
-}
 }
