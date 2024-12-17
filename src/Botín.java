@@ -13,7 +13,7 @@ public static Map<Integer,String> reparto(int num,String [] billetes){
         if(botin==null){
             reparto.put(letocaA,billetes[i]);
         }else{
-            reparto.put(letocaA,botin+"/ "+billetes[i]);
+            reparto.put(letocaA,botin+"/"+billetes[i]);
         }
     }
     return reparto;
