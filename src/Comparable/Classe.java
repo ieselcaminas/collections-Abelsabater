@@ -26,7 +26,7 @@ public String toString() {
 public int compareTo(Classe vehiculo) {
     if (this.coche.equals(vehiculo.getCoche())) {
         return 0;
-    } else if (this.coche.compareTo(vehiculo.getCoche())>1 ) {
+    } else if (this.coche.compareTo(vehiculo.getCoche())>1) {
         return 1;
     } else {
         return -1;
