@@ -11,7 +11,7 @@ public static void main(String[] args) {
     personas.add(p);
    long num= personas.stream().
             filter(pers->pers.getLastName().charAt(0)=='A').
-                     count();
+            count();
     System.out.println(num);
 }
 }
