@@ -1,7 +1,5 @@
 package Comparable;
-
 import java.util.ArrayList;
-
 public class Vehiculo {
 public static void main(String[] args) {
     ArrayList<Classe> carglass= new ArrayList<>();
