@@ -1,12 +1,9 @@
 package Flujos;
-
 import java.util.Arrays;
 import java.util.List;
-
 public class OrdenAlfabetico {
-
 public static void main(String[] args) {
-    List<Personas> personas= (List<Personas>) Arrays.asList(
+    List<Personas> personas= Arrays.asList(
             new Personas("Abel","Sabater",2006),
             new Personas("Ximo","Alcacer",1954),
             new Personas("Ana","Alvarez",2015)
