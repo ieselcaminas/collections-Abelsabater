@@ -12,9 +12,9 @@ public static void main(String[] args) {
         num= sc.nextInt();
         numeros.add(num);
     }
-    ArrayList <Integer> lista= (ArrayList<Integer>) numeros.stream().
+    numeros.stream().
     filter(n->n>=1 && n<=5).
-    collect(Collectors.toList());
-    System.out.println(lista);
+    collect(Collectors.toList()).
+    forEach(System.out::println);
 }
 }
