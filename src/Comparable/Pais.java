@@ -23,6 +23,6 @@ public String toString(){
     return this.nombre+", "+this.n_analfabetos;
 }
 public int compareTo(Pais other){
-    return this.getN_analfabetos()-other.getN_analfabetos();
+    return this.n_analfabetos-other.getN_analfabetos();
 }
 }
