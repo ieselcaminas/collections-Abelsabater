@@ -4,7 +4,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
-
 public class Orden_as_analfabetos {
 public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new FileReader("file/illiterate.csv"));
