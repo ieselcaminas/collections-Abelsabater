@@ -7,6 +7,6 @@ public static void main(String[] args) {
     carglass.add(vehiculoo);
     vehiculoo=new Classe("Renault","amarillo");
     carglass.add(vehiculoo);
-    carglass.stream().sorted().forEach(System.out::println);
+    carglass.stream(). sorted().forEach(System.out::println);
 }
 }
