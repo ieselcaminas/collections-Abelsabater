@@ -13,7 +13,7 @@ public static void main(String[] args) throws IOException {
     if(!(reader.readLine().equals(0))){
         while ((pais = reader.readLine())!=null) {
                 String [] dades=pais.split(",");
-                Paises paiss=new Paises(dades[5],Integer.valueOf(dades[8]));
+                Paises paiss=new Paises(dades[5],Integer.parseInt(dades[8]));
                 paisesList.add(paiss);
     }
     }
