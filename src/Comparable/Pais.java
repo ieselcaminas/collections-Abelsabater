@@ -22,6 +22,7 @@ public void setN_analfabetos(int n_analfabetos) {
 public String toString(){
     return this.nombre+", "+this.n_analfabetos;
 }
+@Override
 public int compareTo(Pais other){
     return this.n_analfabetos-other.getN_analfabetos();
 }
