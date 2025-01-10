@@ -9,12 +9,11 @@ public static void main(String[] args) throws IOException {
     BufferedReader reader = new BufferedReader(new FileReader("file/illiterate.csv"));
     List<Pais> paisesList=new ArrayList<>();
     String pais;
-    if(!(reader.readLine().equals(0))){
-        while ((pais = reader.readLine())!=null) {
-                String [] dades=pais.split(",");
-                Pais paiss=new Pais(dades[5],Integer.parseInt(dades[8]));
-                paisesList.add(paiss);
-    }
+    reader.readLine();
+    while ((pais = reader.readLine())!=null) {
+        String [] dades=pais.split(",");
+        Pais paiss=new Pais(dades[5],Integer.parseInt(dades[8]));
+        paisesList.add(paiss);
     }
     paisesList.stream().
     sorted().
