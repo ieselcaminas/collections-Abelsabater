@@ -8,20 +8,16 @@ public Classe(String coche, String color) {
     this.coche = coche;
     this.color = color;
 }
-
 public String getCoche() {
     return this.coche;
 }
-
 public String getColor() {
     return this.color;
 }
-
 @Override
 public String toString() {
     return this.getCoche() + " de color " + this.getColor();
 }
-
 @Override
 public int compareTo(Classe vehiculo) {
     if (this.coche.equals(vehiculo.getCoche())) {
