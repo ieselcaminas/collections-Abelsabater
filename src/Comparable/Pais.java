@@ -1,10 +1,10 @@
 package Comparable;
 
-public class Paises  implements Comparable<Paises>{
+public class Pais  implements Comparable<Pais>{
 private String nombre;
 private int n_analfabetos;
 
-public Paises(String nombre, int n_analfabetos) {
+public Pais(String nombre, int n_analfabetos) {
     this.nombre = nombre;
     this.n_analfabetos = n_analfabetos;
 }
@@ -28,7 +28,7 @@ public void setN_analfabetos(int n_analfabetos) {
 public String toString(){
     return this.nombre+", "+this.n_analfabetos;
 }
-public int compareTo(Paises other){
+public int compareTo(Pais other){
     return Integer.compare(this.getN_analfabetos(),other.getN_analfabetos());
 }
 }
