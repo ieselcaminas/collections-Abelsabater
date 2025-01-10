@@ -29,12 +29,6 @@ public String toString(){
     return this.nombre+", "+this.n_analfabetos;
 }
 public int compareTo(Paises other){
-    if (this.n_analfabetos==other.getN_analfabetos()) {
-        return 0;
-    } else if ((this.n_analfabetos-other.getN_analfabetos())>0) {
-        return 1;
-    } else {
-        return -1;
-    }
+    return Integer.compare(this.n_analfabetos,other.n_analfabetos);
 }
 }
