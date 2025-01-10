@@ -1,6 +1,6 @@
 package Comparable;
 
-public class Paises {
+public class Paises  implements Comparable<Paises>{
 private String nombre;
 private int n_analfabetos;
 
