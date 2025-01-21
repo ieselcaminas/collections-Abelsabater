@@ -6,12 +6,12 @@ import java.util.List;
 
 public class OrdenarTesoros {
 public static void main(String[] args) {
-    List<Tesoros> tesorosList=new ArrayList<>();
-    Tesoros tesoros=new Tesoros("flecha",50,5);
+    List <Tesoros> tesorosList=new ArrayList<>();
+    Tesoros tesoros=new Tesoros(10,2,"flecha");
     tesorosList.add(tesoros);
-    tesoros=new Tesoros("mascara",30,9);
+    tesoros=new Tesoros(2,3,"sarcofago");
     tesorosList.add(tesoros);
-    tesoros=new Tesoros("mascara",30,12);
+    tesoros=new Tesoros(10,8,"sandalia");
     tesorosList.add(tesoros);
     tesorosList.stream()
             .sorted()

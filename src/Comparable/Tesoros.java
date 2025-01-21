@@ -1,30 +1,18 @@
 package Comparable;
 
-public class Tesoros implements Comparable<Tesoros>{
-private String nombre;
+public class Tesoros implements Comparable<Tesoros> {
 private int valor;
-private int cantidad;
+private int peso;
+private String nombre;
 
-public Tesoros(String nombre, int valor, int cantidad) {
-    this.nombre = nombre;
+public Tesoros(int valor, int peso, String nombre) {
     this.valor = valor;
-    this.cantidad=cantidad;
-}
-
-public int getCantidad() {
-    return cantidad;
-}
-
-public void setCantidad(int cantidad) {
-    this.cantidad = cantidad;
+    this.peso = peso;
+    this.nombre = nombre;
 }
 
 public String getNombre() {
     return nombre;
-}
-
-public void setNombre(String nombre) {
-    this.nombre = nombre;
 }
 
 public int getValor() {
@@ -34,18 +22,26 @@ public int getValor() {
 public void setValor(int valor) {
     this.valor = valor;
 }
+
+public void setNombre(String nombre) {
+    this.nombre = nombre;
+}
+public int getPeso() {
+    return peso;
+}
+public void setPeso(int peso) {
+    this.peso = peso;
+}
 @Override
-public String toString(){
-    return this.nombre+" --> "+this.valor+" --> "+this.cantidad;
+public String toString() {
+    return this.nombre+" valor "+this.valor+ " peso "+this.peso;
 }
 @Override
 public int compareTo(Tesoros other){
-    if(other.valor -this.valor==0){
-        return this.nombre.compareTo(other.getNombre());
-    }else if (this.nombre.compareTo(other.getNombre())==0) {
-        return other.cantidad-this.cantidad;
-    }else {
-        return other.valor -this.valor;
-    }
+if(other.getValor()-this.valor==0){
+    return this.peso-other.getPeso();
+}else{
+   return other.getValor()-this.valor;
+}
 }
 }
