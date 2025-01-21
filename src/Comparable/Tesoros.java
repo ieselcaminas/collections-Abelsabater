@@ -1,13 +1,24 @@
 package Comparable;
 public class Tesoros implements Comparable<Tesoros> {
-private int valor;
+    private int orden;
+    private int valor;
 private int peso;
 private String nombre;
-public Tesoros(int valor, int peso, String nombre) {
+public Tesoros(int valor, int peso, String nombre, int orden) {
     this.valor = valor;
     this.peso = peso;
     this.nombre = nombre;
+    this.orden=orden;
 }
+
+public int getOrden() {
+    return orden;
+}
+
+public void setOrden(int orden) {
+    this.orden = orden;
+}
+
 public String getNombre() {
     return nombre;
 }
@@ -33,7 +44,11 @@ public String toString() {
 @Override
 public int compareTo(Tesoros other){
 if(other.getValor()-this.valor==0){
-    return this.peso-other.getPeso();
+    if (this.peso-other.getPeso()==0) {
+        return this.orden-other.getOrden();
+    }else{
+        return this.peso-other.getPeso();
+    }
 }else{
    return other.getValor()-this.valor;
 }
