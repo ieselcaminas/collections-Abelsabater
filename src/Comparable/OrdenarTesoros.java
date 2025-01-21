@@ -1,9 +1,6 @@
 package Comparable;
-
-
 import java.util.ArrayList;
 import java.util.List;
-
 public class OrdenarTesoros {
 public static void main(String[] args) {
     List <Tesoros> tesorosList=new ArrayList<>();
