@@ -28,7 +28,7 @@ public void setPeso(int peso) {
 }
 @Override
 public String toString() {
-    return this.nombre+" valor "+this.valor+ " peso "+this.peso;
+    return this.nombre+" valor: "+this.valor+ ", peso: "+this.peso;
 }
 @Override
 public int compareTo(Tesoros other){
