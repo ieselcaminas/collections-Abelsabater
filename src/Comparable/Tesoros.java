@@ -2,8 +2,8 @@ package Comparable;
 public class Tesoros implements Comparable<Tesoros> {
     private int orden;
     private int valor;
-private int peso;
-private String nombre;
+    private int peso;
+    private String nombre;
 public Tesoros(int valor, int peso, String nombre, int orden) {
     this.valor = valor;
     this.peso = peso;
